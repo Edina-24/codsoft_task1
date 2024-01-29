@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="l3.css">
+	<title>Landing Page</title>
+</head>
+
+<body>
+	<nav>
+		<div class="heading">Landing Page</div>
+		<span class="sideMenuButton"
+			onclick="openNavbar()">
+			☰
+		</span>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar">
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()">
+			
+		</a>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Sign Up</a>
+	</div>
+
+	<!-- Content -->
+	<div class="line" id="Home">
+		<div class="side1">
+			<h1>TED Talks</h1>
+			<button>
+				<a href=
+"https://www.ted.com/">
+					Explore More
+				</a>
+			</button>
+		</div>
+		<div class="side2">
+			<img src=
+"data:image/png;base64,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"
+				width="500">
+		</div>
+	</div>
+
+	<section class="about" id="My Projects">
+		<div class="content">
+			<div class="title">
+				<span>Contents
+				</span>
+			</div>
+			<div class="boxes">
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+							Science and technology
+						</a>
+					</div>
+					<p>
+						TED Talks delves into cutting-edge advancements and transformative ideas. Renowned experts and visionaries share insights on the latest breakthroughs, exploring topics ranging from artificial intelligence and robotics to biotechnology
+					</p>
+				</div>
+				<div class="box">
+
+					<div class="topic">
+						<a href="" target="_blank">
+							Inspiration and Motivation
+						</a>
+					</div>
+					<p>
+						TED Talks serve as a powerful platform for individuals to share compelling personal stories and insights that resonate with a broad audience. Speakers often recount their journeys of overcoming challenges, setbacks, and adversity, offering valuable lessons and wisdom gained from their experiences
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+							Business and Leadership
+						</a>
+					</div>
+					<p>
+						TED Talks feature thought leaders, entrepreneurs, and management experts who share valuable insights and perspectives on effective leadership, innovative business strategies, and the evolving landscape of commerce
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="content">
+			<div class="title"><span>Sign Up</span></div>
+			<div class="contactMenu">
+				<div class="input1">
+					<div class="label1">Your Name</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Name here">
+					</div>
+					<div class="label1">
+						<label>Your Email</label>
+					</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Email here">
+					</div>
+					<div class="label1">
+						<label>Your Password</label>
+					</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Password here">
+					</div>
+					<div class="button">
+						<button>Sign Up</button>
+					</div>
+				</div>
+				<div class="input3">
+					<div class="rightside1">
+						
+						<div class="title1">
+							<span>More Information</span>
+						</div>
+						<div class="content1">
+TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 110 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer section -->
+	<footer>
+		<div class="footer">
+			<span>
+				Created By
+				<a href="https://www.ted.com/"
+					target="_blank">
+					TED Talks
+				</a>
+			</span>
+		</div>
+	</footer>
+	<script src="l1.js"></script>
+</body>
+
+</html>
